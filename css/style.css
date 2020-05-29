@@ -1,0 +1,398 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    background: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+/* --------------- 
+    Header styles
+    -------------- */
+
+header {
+    background: #00b7ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: background 0.3s ease-in-out; /* fade out works the same way as fade in */
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto; /*center block elements, works only if width was set */
+    justify-content: space-between; /* centers horizontally */
+    align-items: center; /* centers vertically */
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+
+}
+
+.main-menu a:hover {
+    background: black;
+    transition: background 0.3s ease-in-out;
+}
+
+/* --------------- 
+    Hero section styles
+    -------------- */
+
+#hero {
+    background: linear-gradient(#03b7ff6e, #03b7ff6e), url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+}
+
+.button {
+    display: inline-block;
+    background-color: none;
+    font: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out; 
+}
+
+.button:hover {
+    background: black;
+    border: 2px solid black;
+    transition: all 0.2s ease-in-out; 
+    
+}
+
+#section-2 {
+  padding: 60px 0;
+}
+
+.block-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button-primary {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #00b7ff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #03b7ff;
+}
+
+.link {
+    text-decoration: none;
+    color: #00b7ff;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+/* --------------- 
+    Team section styles
+    -------------- */
+
+.team {
+    background: #00b7ff;
+    color: white;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.team article {
+    flex: 1;
+    text-align: center;
+}
+
+section > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px; 
+}
+
+section > h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: white;
+    margin: 0 auto 20px;
+}
+
+.team img {
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 2px 4px 8px rgba(0,0,0, 0.5);
+}
+
+/* --------------- 
+    Products section styles
+    -------------- */
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column {
+    flex: 1;
+}
+
+#products h3 {
+    color: #00b7ff;
+    font-size: 30px;
+}
+
+.product-features {
+    padding: 0;
+    list-style-image: url(../img/li.png);
+}
+
+.product-features li {
+    margin-bottom: 20px;
+}
+
+.product-whole {
+    padding: 40px;
+}
+
+figure {
+    border: 1px solid #ccc;
+    max-height: 50vh;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+figure .responsive-img {
+    max-width: 80%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0, 0.3);
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+#products > h2::after {
+    background: #00b7ff;
+}
+
+/* --------------- 
+    Contact us section styles
+    -------------- */
+
+#contact-us {
+    background: black;
+}
+
+#contact-us h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#contact-us > h2::after {
+    background-color:#00b7ff;
+}
+
+#contact-form {
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+    }
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;  
+    width: 100%; 
+    text-transform: uppercase;  
+    font-size: 18px;                  
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+}
+
+.input-group textarea {
+    font-family: "Open Sans", Arial, sans-serif;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* --------------- 
+    Footer styles
+    -------------- */
+
+footer {
+    text-align: center;
+}
+
+.social-icons {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.social-icons a {
+    color: #00b7ff;
+    font-size: 60px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer p {
+    text-decoration: none;
+}
+
+.main-menu li:last-child a {
+    background: black;
+}
+
+/* --------------- 
+    Transitions
+    -------------- */
+
+figure:hover img {
+    transform: scale(1.5) rotate(15deg);
+}
+
+figure img {
+    transition: transform 0.3s ease-in-out;
+}
+
+figure:hover figcaption {
+    opacity: 0.5;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+figure figcaption {
+    transform: translateY(100%);
+    transition: transition 0.3s ease-in-out, opacity 0.8s;
+    opacity: 0;
+}
+
+/* --------------- 
+    Mobile
+    -------------- */
+
+#hamburger {
+    color: white;
+    padding: 15px;
+    display: none;
+}
+
+/* @media (min-width: 641) and (max-width:900px) {
+
+} */
+
+
+@media (max-width: 640px) {
+
+    nav {
+        display: none;
+    }
+
+    #hamburger {
+        display: initial;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav.open {
+    display: block;
+    position: fixed;
+    width: 30vh;
+    top: 52px;
+    right: 0;
+    }
+
+    nav.open .main-menu a {
+        color: white;
+    }
+
+    nav.open .main-menu {
+    flex-direction: column;  
+    background: rgba(0, 183, 255, 0.8);
+    text-align: center;
+    }
+
+    .main-menu a {
+        transition: none;
+    }
+
+    .main-menu a:hover {
+        background-color: black;
+        width: 100%;
+    }
+}
